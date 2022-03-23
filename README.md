@@ -1,4 +1,4 @@
-# balancescalegame.github.io
+# Balance Scale Game
 
 https://dennisteowh.github.io/balancescalegame/
 # Scenario
