@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Balance Scale Game</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- external general utilities -->
+        <script src="shared/jquery-1.11.1.min.js"></script>
+        <script src="shared/jquery-ui.min.js"></script>
+        <script src="shared/underscore-min.js"></script>
+      </head>
+      <body>
+
+      <div class="contentContainer">
+      
+        <div id = "balance-sign">BALANCED</div>
+
+        <div class = "beam-balance"> 
+          <div class = "left-bar"> </div>
+          <div class = "right-bar"> </div>
+        </div>
+
+        <div class = "center-bar"> 
+          <div class = "center-base"> </div>
+        </div>
+
+        <div class = "left-balance">  
+            <div class="bigbox" id = "left-balance-box">
+              <div class = "picture-box" id = "boxL1"></div>
+              <div class = "picture-box" id = "boxL2"></div>
+              <div class = "picture-box" id = "boxL3"></div>
+              <div class = "picture-box" id = "boxL4"></div>
+              <div class = "picture-box" id = "boxL5"></div>
+              <div class = "picture-box" id = "boxL6"></div>
+              <div class = "picture-box" id = "boxL7"></div>
+              <div class = "picture-box" id = "boxL8"></div>
+              <div class = "picture-box" id = "boxL9"></div>
+              <div class = "picture-box" id = "boxL10"></div>
+              <div class = "picture-box" id = "boxL11"></div>
+              <div class = "picture-box" id = "boxL12"></div>
+            </div>
+        </div>
+        <div class = "right-balance"> 
+            <div class="bigbox" id = "right-balance-box">
+              <div class = "picture-box" id = "boxR1"></div>
+              <div class = "picture-box" id = "boxR2"></div>
+              <div class = "picture-box" id = "boxR3"></div>
+              <div class = "picture-box" id = "boxR4"></div>
+              <div class = "picture-box" id = "boxR5"></div>
+              <div class = "picture-box" id = "boxR6"></div>
+              <div class = "picture-box" id = "boxR7"></div>
+              <div class = "picture-box" id = "boxR8"></div>
+              <div class = "picture-box" id = "boxR9"></div>
+              <div class = "picture-box" id = "boxR10"></div>
+              <div class = "picture-box" id = "boxR11"></div>
+              <div class = "picture-box" id = "boxR12"></div>
+          </div>
+        </div>
+
+      <div class = "rack">
+          <div class = "picture-box" id = "box1">
+            <img src="images/chemical1.png" alt="chem1" class="chem1" id="chem1">
+          </div>
+          <div class = "picture-box" id = "box2" > 
+            <img src="images/chemical2.png" alt="chem2" class="chem2" id="chem2">
+          </div>
+          <div class = "picture-box" id = "box3" > 
+            <img src="images/chemical3.png" alt="chem3" class="chem3" id="chem3">
+          </div>
+          <div class = "picture-box" id = "box4" > 
+            <img src="images/chemical4.png" alt="chem4" class="chem4" id="chem4">
+          </div>
+          <div class = "picture-box" id = "box5" > 
+            <img src="images/chemical5.png" alt="chem5" class="chem5" id="chem5">
+          </div>
+          <div class = "picture-box" id = "box6" > 
+            <img src="images/chemical6.png" alt="chem6" class="chem6" id="chem6">
+          </div>
+          <div class = "picture-box" id = "box7" > 
+            <img src="images/chemical7.png" alt="chem7" class="chem7" id="chem7">
+          </div>
+          <div class = "picture-box" id = "box8" > 
+            <img src="images/chemical8.png" alt="chem8" class="chem8" id="chem8">
+          </div>
+          <div class = "picture-box" id = "box9" > 
+            <img src="images/chemical9.png" alt="chem9" class="chem9" id="chem9">
+          </div>
+          <div class = "picture-box" id = "box10" > 
+            <img src="images/chemical10.png" alt="chem10" class="chem10" id="chem10">
+          </div>
+          <div class = "picture-box" id = "box11" > 
+            <img src="images/chemical11.png" alt="chem11" class="chem11" id="chem11">
+          </div>
+          <div class = "picture-box" id = "box12" > 
+            <img src="images/chemical12.png" alt="chem12" class="chem12" id="chem12">
+          </div>
+          <div class = "picture-box" id = "box13" > 
+          </div>
+          <div class = "picture-box" id = "box14" > 
+          </div>
+          <div class = "picture-box" id = "box15" > 
+          </div>
+          <div class = "picture-box" id = "box16" > 
+          </div>
+      </div>
+
+      <div class = "bin" id = "bin">
+        <img src="images/biohazard.jpg" alt="biohazard" class="biohazard" id="biohazard">
+        <div class = "picture-box" id = "boxB1">
+        </div>
+        <div class = "picture-box" id = "boxB2" > 
+        </div>
+        <div class = "picture-box" id = "boxB3" > 
+        </div>
+        <div class = "picture-box" id = "boxB4" > 
+        </div>
+        <div class = "picture-box" id = "boxB5" > 
+        </div>
+        <div class = "picture-box" id = "boxB6" > 
+        </div>
+    </div>
+
+      <div id = "attempt-sign"></div>
+      
+      </div>
+
+      <div id = "score-sign"></div>
+      <div id = "scoring-sign">
+        Ship Goods: 1pt each<br>
+        Ship Defect: -10pts each<br>
+        Waste Goods: -5pts each
+      </div>
+      <div class="report">
+        <div id = "tally-sign"></div>
+        <div id = "update-sign"></div>
+      </div>
+      
+      <div class = "button-block">
+        <input id="activate" type="button" value="Activate"></input>
+        <input id="recall" type="button" value="Recall"></input>
+        <input id="next" type="button" value="Ship!"></input>
+      </div>
+      
+      <input id="submit" type="button" value="END GAME"></input>
+
+      <script src="main.js" defer></script>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,614 @@
+
+
+  body {
+    background-color: #FFF;
+    margin: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contentContainer {
+    position: relative;
+    display: block;
+    width: 700px;
+    height: 650px;
+    border: 5px black solid;
+    overflow: hidden;
+    background-color: white;
+    align-items: center;
+    
+  }
+
+
+  #right-balance-box{
+    bottom:90px;
+  }
+
+  #left-balance-box{
+    bottom:90px;
+    
+  }
+
+  .bigbox {
+    position:absolute;
+    width:300px;
+    height:122px;
+    border-color: red;
+    top:-122px;
+    z-index: 1;
+    background-color: none;
+  }
+
+  #rack1{
+    width:250px;
+  }
+
+  .chem1 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem2 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem3 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem4 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem5 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem6 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem7 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem8 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem9 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem10 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem11 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .chem12 {
+    position:relative;
+    z-index: 5;
+  }
+
+  .biohazard {
+    position:absolute;
+    width:80px;
+    height:80px;
+    left:35px;
+    bottom:125px;
+  }
+
+  .picture-box{
+    position:absolute;
+    width: 50px;
+    height:61px;
+  }
+
+  #box1{
+    left:0px;
+    top:61px;
+  }
+
+  #box2{
+    left:50px;
+    top:61px;
+  }
+
+  #box3{
+    left:100px;
+    top:61px;
+  }
+
+  #box4{
+    left:150px;
+    top:61px;
+  }
+
+  #box5{
+    left:200px;
+    top:61px;
+  }
+
+  #box6{
+    left:0px;
+  }
+
+  #box7{
+    left:50px;
+  }
+
+  #box8{
+    left:100px;
+  }
+
+  #box9{
+    left:150px;
+  }
+
+  #box10{
+    left:200px;
+  }
+
+  #box11{ /*note this starts from 6th column 1st row*/
+    left:250px;
+    top:61px;
+  }
+
+  #box12{
+    left:300px;
+    top:61px;
+  }
+
+  #box13{
+    left:350px;
+    top:61px;
+  }
+
+  #box14{  /*note this starts from 6th column 2nd row*/
+    left:250px;
+  }
+
+  #box15{
+    left:300px;
+  }
+
+  #box16{
+    left:350px;
+  }
+
+  
+  #boxB1{
+    left:0px;
+    top:61px;
+    border-style: solid;
+  }
+
+  #boxB2{
+    left:50px;
+    top:61px;
+    border-style: solid;
+  }
+
+  #boxB3{
+    left:100px;
+    top:61px;
+    border-style: solid;
+  }
+
+  #boxB4{
+    left:0px;
+    border-style: solid;
+  }
+
+  #boxB5{
+    left:50px;
+    border-style: solid;
+  }
+
+  #boxB6{
+    left:100px;
+    border-style: solid;
+  }
+  
+  .rack {
+    position:absolute;
+    width:400px;
+    height:122px;
+    left:25px;
+    bottom:90px;
+    border-style: solid;
+    z-index: 0;
+    background-color: none;
+  }
+
+  .bin {
+    position:absolute;
+    width:150px;
+    height:122px;
+    bottom:90px;
+    left: 500px;
+    border-style: solid;
+    z-index: 0;
+    background-color: none;
+  }
+
+  /*left beam balance*/
+
+  #left-balance-box:hover{
+    background-color: lightgreen;
+  }
+
+  #right-balance-box:hover{
+    background-color: lightgreen;
+  }
+
+  #bin:hover{
+    background-color: red;
+  }
+
+
+  #boxL1{
+    position:absolute;
+    left:0px;
+    top:61px;
+  }
+
+  #boxL2{
+    position:absolute;
+    left:50px;
+    top:61px;
+  }
+
+  #boxL3{
+    position:absolute;
+    left:100px;
+    top:61px;
+  }
+
+  #boxL4{
+    position:absolute;
+    left:150px;
+    top:61px;
+  }
+
+  #boxL5{
+    position:absolute;
+    left:200px;
+    top:61px;
+  }
+
+  #boxL6{
+    position:absolute;
+    left:250px;
+    top:61px;
+  }
+
+  #boxL7{
+    position:absolute;
+    left:0px;
+  }
+
+  #boxL8{
+    position:absolute;
+    left:50px;
+  }
+
+  #boxL9{
+    position:absolute;
+    left:100px;
+  }
+
+  #boxL10{
+    position:absolute;
+    left:150px;
+  }
+
+  #boxL11{
+    position:absolute;
+    left:200px;
+  }
+
+  #boxL12{
+    position:absolute;
+    left:250px;
+  }
+
+  
+  #boxR1{
+    position:absolute;
+    left:0px;
+    top:61px;
+  }
+
+  #boxR2{
+    position:absolute;
+    left:50px;
+    top:61px;
+  }
+
+  #boxR3{
+    position:absolute;
+    left:100px;
+    top:61px;
+  }
+
+  #boxR4{
+    position:absolute;
+    left:150px;
+    top:61px;
+  }
+
+  #boxR5{
+    position:absolute;
+    left:200px;
+    top:61px;
+  }
+  
+  #boxR6{
+    position:absolute;
+    left:250px;
+    top:61px;
+  }
+
+  #boxR7{
+    position:absolute;
+    left:0px;
+  }
+
+  #boxR8{
+    position:absolute;
+    left:50px;
+  }
+
+  #boxR9{
+    position:absolute;
+    left:100px;
+  }
+
+  #boxR10{
+    position:absolute;
+    left:150px;
+  }
+
+  #boxR11{
+    position:absolute;
+    left:200px;
+  }
+
+  #boxR12{
+    position:absolute;
+    left:200px;
+  }
+
+  .button-block{
+    position:relative;
+    display:inline;
+    bottom:500px;
+  }
+
+  #activate {
+    background-color: gold;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px solid #333;
+  }
+  #activate:hover {
+    background-color: coral;
+  }
+  #activate:active {
+    background-color: yellowgreen;
+  }
+
+  #recall {
+    background-color: silver;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px solid #333;
+    margin-left: 20px;
+  }
+  #recall:hover {
+    background-color: coral;
+  }
+  #recall:active {
+    background-color: yellowgreen;
+  }
+
+  #next {
+    background-color: green;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px solid #333;
+    outline: none;
+    margin-left: 20px;
+  }
+  #next:hover {
+    background-color: coral;
+  }
+  #next:active {
+    background-color: yellowgreen;
+  }
+
+  #reveal {
+    background-color: gold;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px solid #333;
+    outline: none;
+  }
+  #reveal:hover {
+    background-color: coral;
+  }
+  #reveal:active {
+    background-color: yellowgreen;
+  }
+  
+  #submit {
+    position:relative;
+    background-color: red;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px solid #333;
+    outline: none;
+    bottom:500px;
+  }
+  #submit:hover {
+    background-color: coral;
+  }
+  #submit:active {
+    background-color: yellowgreen;
+  }
+
+
+  .beam-balance {
+    height: 15px;
+    width: 250px;
+    background-color:black;
+    position: absolute;
+    left: 225px ;
+    bottom: 400px ;
+  } /* [250, 400] */
+
+  .left-bar {
+    height: 10px;
+    width: 15px;
+    background-color:black;
+    position: relative;
+    bottom:10px;
+  }
+
+  .right-bar {
+    height: 10px;
+    width: 15px;
+    background-color:black;
+    position: relative;
+    left:235px;
+    bottom:20px;
+  }
+
+  .center-bar {
+    height: 60px;
+    width: 15px;
+    background-color:black;
+    position: absolute;
+    left: 335px ;
+    bottom: 360px ;
+  }
+
+  .center-base {
+    height: 10px;
+    width: 80px;
+    background-color:black;
+    position: relative;
+    right:30px;
+    top:60px;
+  }
+
+  .left-balance {
+    height: 12.5px;
+    width: 300px;
+    background-color:black;    
+    position: absolute;
+    left: 10px ;
+    bottom: 420px ;
+  } /* [220, ] */
+
+  .right-balance {
+    height: 12.5px;
+    width: 300px;
+    background-color:black;
+    position: absolute;
+    left: 375px ;
+    bottom: 420px ;
+  }
+
+  #balance-sign{
+    position:absolute;
+    height: 50px;
+    width: 200px;
+    left:230px;
+    top:35px;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    display:none;
+  }
+
+  #attempt-sign{
+    position:absolute;
+    height: 50px;
+    width: 700px;
+    left:230px;
+    top:330px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:red;
+  }
+
+  #score-sign{
+    position:relative;
+    height: 20px;
+    width: 350px;
+    left:550px;
+    bottom:600px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:green;
+  }
+
+  #scoring-sign{
+    position:relative;
+    height: 200px;
+    width: 350px;
+    left:550px;
+    bottom:550px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+  }
+
+  .report{
+    position:relative;
+    height: 300px;
+    width: 350px;
+    left:550px;
+    bottom:400px;
+  }
+
+  #tally-sign{
+    position:relative;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkred;
+  }
+
+  #update-sign{
+    position:relative;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkred;
+  }
+
+  .hide {
+    display: none;
+  }
+
