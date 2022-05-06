@@ -1,6 +1,7 @@
 # Balance Scale Game
-
+This is a prototype web-game designed to track people's strategic thinking and strategy use. Here is the browser-link:
 https://dennisteowh.github.io/balancescalegame/
+
 # Scenario
 You are a Quality Control Specialist tasked with ensuring the quality of chemical batches. Everyday, you are given a batch of chemical products to vet. 
 Defective chemicals usually differ from quality goods by weight. To this end, you are given a highly sensitive balancing scale to help you with your job.  
